@@ -4,7 +4,7 @@ const calendar = document.querySelector('#calendar');
 
 function calendarTable(year, month, element) {
   const week = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
-  const today = new Date(year, month-1);
+  const today = new Date(year, month - 1);
   const start = today.getDay();
   const rows = start > 5 ? 6 : 5;
   const days = 32 - new Date(today.getFullYear(), today.getMonth(), 32)
